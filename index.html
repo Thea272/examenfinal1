@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamenQuestionario</title>
+    <link rel="stylesheet" href="./css/css.css">
+</head>
+
+<body>
+
+    <h1 id="titulo">Encuesta sobre Perfumería</h1>
+
+    <p class="lparrafo" id="descripcion">¿Cuáles son tus gustos sobre fragancias? Llena los placeholders con tu
+        información?
+    </p>
+
+    <div id="container" class="div">
+
+        <form id="survey-form">
+
+            <div class="grupo">
+                <label for="nombre"><strong>Nombre:</strong></label><br />
+                <input id="nombre" name="nombre" type="text" placeholder="Escribe aquí tu nombre" required />
+            </div>
+
+            <div class="grupo">
+                <label for="edad"><strong>Edad (opcional):</strong></label><br />
+                <input id="edad" name="edad" type="number" placeholder="Ingresa tu edad" min="1" max="120" />
+            </div>
+
+            <div class="grupo">
+                <label for="familia"><strong>¿Cuál es tu familia olfativa preferida?</strong></label><br />
+                <select id="familia" name="familia">
+                    <optgroup label="FrontEnd">
+                        <option value="1">Cítrica o Hespéride</option>
+                        <option value="2">Floral</option>
+                        <option value="3" selected>Amaderada</option>
+                    </optgroup>
+                    <optgroup label="BackEnd">
+                        <option value="4">Fougere</option>
+                        <option value="5">Chipre</option>
+                        <option value="6">Gourmand</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label><strong>Selecciona el tipo de fragancia:</strong></label><br />
+                <input type="radio" name="tipo_fragancia" value="1" id="fragancia_masculina" />
+                <label for="fragancia_masculina">Masculina</label><br />
+                <input type="radio" name="tipo_fragancia" value="2" id="fragancia_femenina" />
+                <label for="fragancia_femenina">Femenina</label><br />
+                <input type="radio" name="tipo_fragancia" value="3" id="fragancia_unisex" checked />
+                <label for="fragancia_unisex">Unisex</label>
+            </div>
+
+            <div>
+                <label><strong>¿Qué concentraciones utilizas de manera habitual?</strong></label><br />
+                <input type="checkbox" id="ef_ef" name="concentracion" value="ef" />
+                <label for="ef_ef">Eau Fraiche (EF)</label><br />
+
+                <input type="checkbox" id="ef_edc" name="concentracion" value="edc" />
+                <label for="ef_edc">Eau de Cologne (EDC): 1–3%, duración corta, ideal para climas cálidos</label><br />
+
+                <input type="checkbox" id="ef_edt" name="concentracion" value="edt" />
+                <label for="ef_edt">Eau de Toilette (EDT): 4–8%, uso diario</label><br />
+
+                <input type="checkbox" id="ef_edp" name="concentracion" value="edp" />
+                <label for="ef_edp">Eau de Parfum (EDP): 8–15%, duración prolongada</label><br />
+
+                <input type="checkbox" id="ef_parfum" name="concentracion" value="parfum" />
+                <label for="ef_parfum">Parfum (P): 15–30%, muy prolongada</label>
+            </div>
+
+            <div>
+                <label for="preferencias"><strong>¿Qué tipos de fragancias prefieres?</strong></label><br />
+                <input type="text" id="preferencias" name="preferencias" placeholder="Escribe tus preferencias" />
+            </div>
+
+            <div>
+                <label for="perfumes"><strong>Nombra tres de tus perfumes preferidos</strong></label><br />
+                <input type="text" id="perfumes" name="perfumes" placeholder="Escribe aquí tus perfumes favoritos" />
+            </div>
+
+            <div>
+
+                <a href="mailto:siseo15@hotmail.com?subject=Hola&body=Este%20es%20el%20mensaje" class="boton">Enviar</a>
+
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
